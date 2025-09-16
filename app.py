@@ -12,7 +12,7 @@ import re
 # Load environment variables 
 load_dotenv()
 # Get the API key
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # Initialize the model with correct model name
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=API_KEY)
