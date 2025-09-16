@@ -2,7 +2,6 @@ import os
 import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi
 from langchain_google_genai import ChatGoogleGenerativeAI
-from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains.llm import LLMChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -10,7 +9,6 @@ from urllib.parse import urlparse, parse_qs
 import re
 
 # Load environment variables 
-load_dotenv()
 # Get the API key
 API_KEY = st.secrets["GOOGLE_API_KEY"]
 
