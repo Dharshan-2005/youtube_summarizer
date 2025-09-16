@@ -3,3 +3,4 @@ youtube-transcript-api
 langchain>=0.3.0
 langchain-google-genai==2.1.10
 google-ai-generativelanguage>=0.6.18,<0.7.0
+youtube_transcript_api
